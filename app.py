@@ -2,6 +2,7 @@
 # pip install Pillow Attention no powershell
 from customtkinter import *
 from PIL import Image
+from tkcalendar import Calendar
 
 def mood_select(choice) :
     global mood_select
@@ -23,6 +24,10 @@ img = CTkImage(Image.open('icon-booksios.png'), size=(50,50))
 label = CTkLabel(app, image=img, bg_color='transparent')
 label.pack(pady=20)
 label.place(relx=0.15, rely=0.07, anchor='center')
+
+cal = Calendar(app, selectmode='day', year=2025, month=3, day=6)
+cal.pack(pady=20)
+cal.place(relx=0.35, rely=0.7, anchor='center')
 
 btn = CTkComboBox(master=app, values=['Feliz😁', 'Normal😒', 'Bravo😡', 'Triste😭'], command=mood_select)
 btn.place(relx=0.25, rely=0.14, anchor='center')
@@ -47,8 +52,5 @@ check.place(relx=0.41, rely=0.39, anchor='center')
 
 check = CTkCheckBox(master=app, text='#programar', width=300) #rely = 0.05 de distância entre um e outro.
 check.place(relx=0.41, rely=0.44, anchor='center')
-
-progress = CTkProgressBar(master=app, width=300)
-progress.place(relx=0.41, rely=0.7, anchor='center' )
 
 app.mainloop()
