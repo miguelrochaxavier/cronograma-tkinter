@@ -22,4 +22,9 @@ check.place(relx=0.41, rely=0.24, anchor='center')
 check = CTkCheckBox(master=app, text='✅comer', width=300) #rely = 0.05 de distância entre um e outro.
 check.place(relx=0.41, rely=0.29, anchor='center')
 
+#
+
+progress = CTkProgressBar(master=app, width=300)
+progress.place(relx=0.41, rely=0.7, anchor='center' )
+
 app.mainloop()
