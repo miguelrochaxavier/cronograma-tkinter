@@ -50,7 +50,7 @@ check.place(relx=0.41, rely=0.34, anchor='center')
 check = CTkCheckBox(master=app, text='❗estudar enem', width=300)
 check.place(relx=0.41, rely=0.39, anchor='center')
 
-check = CTkCheckBox(master=app, text='💤acordar cedo', width=300) #rely = 0.05 de distância entre um e outro.
+check = CTkCheckBox(master=app, text='✅acordar cedo', width=300) #rely = 0.05 de distância entre um e outro.
 check.place(relx=0.41, rely=0.44, anchor='center')
 
 check = CTkCheckBox(master=app, text='#programar', width=300) #rely = 0.05 de distância entre um e outro.
