@@ -4,13 +4,6 @@ from tkcalendar import Calendar
 from datetime import date
 
 
-def mood_select(choice) :
-    global mood_select
-    mood = str(choice.split('-')[0])
-
-#def mood_selected() :
-    #try:
-        #resultado_label.configure(text='😁')
 
 app = CTk()
 app.geometry('500x800')
@@ -29,10 +22,10 @@ cal = Calendar(app, selectmode='day', year=2025, month=3, day=10) #fazer um cód
 cal.pack(pady=20) # fazer o mesmo para horário
 cal.place(relx=0.35, rely=0.7, anchor='center')
 
-btn = CTkComboBox(master=app, values=['Feliz😁', 'Normal😒', 'Bravo😡', 'Triste😭'], command=mood_select)
+btn = CTkComboBox(master=app, values=['Feliz😁', 'Normal😒', 'Bravo😡', 'Triste😭'])
 btn.place(relx=0.25, rely=0.14, anchor='center')
 
-btn = CTkComboBox(master=app, values=['bom', 'mediano', 'ruim', 'madruguei'], command=mood_select)
+btn = CTkComboBox(master=app, values=['bom', 'mediano', 'ruim', 'madruguei'])
 btn.place(relx=0.25, rely=0.19, anchor='center')
 
 resultado_label = CTkLabel(master=app, text="", font=("Arial", 14))
@@ -58,5 +51,8 @@ check.place(relx=0.41, rely=0.49, anchor='center')
 
 check = CTkCheckBox(master=app, text='#programar', width=300) #rely = 0.05 de distância entre um e outro.
 check.place(relx=0.41, rely=0.54, anchor='center')
+
+entry = CTkEntry(master=app, placeholder_text='Escreva aqui...', width=300,)
+entry.place(relx=0.5, rely=0.6, anchor='center')
 
 app.mainloop()
