@@ -1,5 +1,3 @@
-# pip install customtkinter no powershell
-# pip install Pillow Attention no powershell
 from customtkinter import *
 from PIL import Image
 from tkcalendar import Calendar
@@ -41,7 +39,7 @@ resultado_label.place(relx=0.5, rely=0.6, anchor='center')
 check = CTkCheckBox(master=app, text='✅comer', width=300) #rely = 0.05 de distância entre um e outro.
 check.place(relx=0.41, rely=0.24, anchor='center')
 
-check = CTkCheckBox(master=app, text='💧2L água', width=300)
+check = CTkCheckBox(master=app, text='✅acordar cedo', width=300)
 check.place(relx=0.41, rely=0.29, anchor='center')
 
 check = CTkCheckBox(master=app, text='❗estudar escola', width=300)
@@ -50,7 +48,7 @@ check.place(relx=0.41, rely=0.34, anchor='center')
 check = CTkCheckBox(master=app, text='❗estudar enem', width=300)
 check.place(relx=0.41, rely=0.39, anchor='center')
 
-check = CTkCheckBox(master=app, text='✅acordar cedo', width=300) #rely = 0.05 de distância entre um e outro.
+check = CTkCheckBox(master=app, text='💧2L água', width=300) #rely = 0.05 de distância entre um e outro.
 check.place(relx=0.41, rely=0.44, anchor='center')
 
 check = CTkCheckBox(master=app, text='✅treino', width=300) #rely = 0.05 de distância entre um e outro.
