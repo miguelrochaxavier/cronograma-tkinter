@@ -1,7 +1,6 @@
 from customtkinter import *
 from PIL import Image
 from tkcalendar import Calendar
-from datetime import date
 
 def resposta_adicionar() :
     resposta = str(entry.get())
