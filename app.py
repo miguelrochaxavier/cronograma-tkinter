@@ -3,7 +3,9 @@ from PIL import Image
 from tkcalendar import Calendar
 from datetime import date
 
-
+def resposta_adicionar() :
+    resposta = str(entry.get())
+    resultado_label.configure(text=f'• {resposta}')
 
 app = CTk()
 app.geometry('500x800')
@@ -21,6 +23,7 @@ label.place(relx=0.15, rely=0.07, anchor='center')
 cal = Calendar(app, selectmode='day', year=2025, month=3, day=10) #fazer um código que indetifica automaticamente que dia e mês atual
 cal.pack(pady=20) # fazer o mesmo para horário
 cal.place(relx=0.35, rely=0.7, anchor='center')
+
 
 btn = CTkComboBox(master=app, values=['Feliz😁', 'Normal😒', 'Bravo😡', 'Triste😭'])
 btn.place(relx=0.25, rely=0.14, anchor='center')
@@ -53,6 +56,12 @@ check = CTkCheckBox(master=app, text='#programar', width=300) #rely = 0.05 de di
 check.place(relx=0.41, rely=0.54, anchor='center')
 
 entry = CTkEntry(master=app, placeholder_text='Escreva aqui...', width=300,)
-entry.place(relx=0.5, rely=0.6, anchor='center')
+entry.place(relx=0.39, rely=0.85, anchor='center')
+
+btn = CTkButton(master=app, text='Adicionar Tarefa', width=30, command=resposta_adicionar)
+btn.place(relx=0.81, rely=0.85, anchor='center')
+
+resultado_label = CTkLabel(master=app, text="", font=("Arial", 14))
+resultado_label.place(relx=0.42, rely=0.92, anchor='center')
 
 app.mainloop()
