@@ -20,8 +20,8 @@ label = CTkLabel(app, image=img, bg_color='transparent')
 label.pack(pady=20)
 label.place(relx=0.15, rely=0.07, anchor='center')
 
-cal = Calendar(app, selectmode='day', year=2025, month=3, day=10) #fazer um código que indetifica automaticamente que dia e mês atual
-cal.pack(pady=20) # fazer o mesmo para horário
+cal = Calendar(app, selectmode='day', year=2025, month=3, day=10) #Fazer um código que indetifica automaticamente que dia e mês atual
+cal.pack(pady=20) #Fazer o mesmo para horário
 cal.place(relx=0.35, rely=0.7, anchor='center')
 
 
